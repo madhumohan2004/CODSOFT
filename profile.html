@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+           }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills li::before {
+            content: '▹';
+            margin-right: 5px;
+            color: #5cb85c;
+        }
+
+        .projects .project {
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="madhu.png" alt="Your Name">
+        <h1>A J V Madhumohan</h1>
+        <p>Web Developer</p>
+        <p>ML Engineer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me!!!</h2>
+        <p>Hello, I'm AJ V Madhumohan, a BMSCE student specializing in Artificial Intelligence and Machine Learning. My expertise includes OCR projects and neural networks, with a notable Railway Reservation system completion. Passionate about leveraging technology, I thrive on solving real-world challenges through innovative solutions. My academic journey is complemented by active engagement in workshops and hackathons. Let's connect and explore the endless possibilities in the ever-evolving AI landscape!</p>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>C and C++</li>
+            <li>python</li>
+
+            
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects Undertaken</h2>
+        <ul>
+            <li>
+                <h3>Online Railway Reservation System Database Backend and Frontend Creation (DBMS Project)</h3>
+                <p> Description: Backend and front end for online railway reservation system ,Involved creation of tables, their connection, and various queries to check for the prototype. </p>
+            </li>
+            <li>
+                <h3>Automated Seed Sowing Bot</h3>
+                <p>Description: An automated seed sowing bot with 3 ultrasound sensors, motor drivers, and Arduino code.</p>
+                
+            </li>
+            <li>
+                <h3>Employee Attrition Prediction</h3>
+                <p>Description: Built and trained an AI Model which predicts how likely an employee is to leave a company. </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Data Engineering Professional Certification</li>
+            <li>Authored IEEE Survey Paper on Automated Seed Sowing Bot</li>
+            <li>Entitled for NPTEL for Python with Data Science</li>
+            <li>Completed Machine Learning with Python course from Y Hills in collaboration with E Cell IIT Hyderabad.</li>
+            <li>Received Certificate of Internship from Y Hills in collaboration with E Cell IIT Hyderabad.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Resume</h2>
+        <p>Please check out my LinkedIn profile for more details on my education, work experience, and skills. </p>
+        <h4>You can find my profile at https://www.linkedin.com/in/madhumohan-ajv-295974267/.</h4> 
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <h3> For more details write to madhumohan.ai21@bmsce.ac.in </h3>
+        <div class="contact">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+
+</body>
+
+</html>
