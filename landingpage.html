@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Co. - Innovating for a Better Tomorrow</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            height: 70vh;
+            background:rgb(34, 194, 247);
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .feature-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .cta {
+            text-align: center;
+            padding: 100px 20px;
+            background-color:rgb(34, 194, 247); ;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .hero img {
+        width: 50%; /* Adjust the width as needed */
+        max-width: 350px; /* Set a maximum width to maintain responsiveness */
+        border-radius: 8px;
+        margin: auto; /* Center the image horizontally */
+        display: block; /* Remove any default inline spacing */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Chemical Co.</h1>
+    </header>
+
+    <nav>
+        <a href="#features">Products</a>
+        <a href="#cta">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <img src="logo1.jpg" alt="Chemical Co. Logo">
+        <h2>Innovating for a Better Tomorrow</h2>
+        <p>Explore our cutting-edge chemical solutions for a sustainable future.</p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Featured Products</h2>
+        <div class="feature-card">
+            <h3>EcoClean X-100: </h3>
+            <p> An eco-friendly industrial cleaning solution with powerful cleaning capabilities and minimal environmental impact.</p>
+        </div>
+        <div class="feature-card">
+            <h3>AquaShield Polymer: </h3>
+            <p> Innovative water-resistant coating for surfaces, providing long-lasting protection against water damage and corrosion.</p>
+        </div>
+        <div class="feature-card">
+            <h3>BioCatalyst Fertilizer Blend:</h3>
+            <p> Revolutionary plant nutrition solution promoting healthier plant growth and optimizing crop yield with a unique blend of traditional fertilizers and bio-catalytic agents.</p>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information or to discuss your chemical needs.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Chemical Co. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
